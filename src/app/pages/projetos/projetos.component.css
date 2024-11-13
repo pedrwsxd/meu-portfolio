@@ -1,0 +1,9 @@
+.container-projetos {
+    max-width: 1180px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}

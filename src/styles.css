@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-color: #00BFFF;
+    --secondary-color: #FDF5F5;
+    --third-color: #73FBFD;
+    --font-1: "Poppins";
+    --font-2: "Inter";
+    --background-image: url("/assets/background.png"); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    background-image: var(--background-image);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  nav ul li {
+    display: block;
+    list-style-type: none;
+    font-style: normal;
+    list-style: none;
+  }
+  ul li a{
+    text-decoration: none;
+  }
+
+  .texto-azul{
+    color: var(--primary-color);
+  }
+

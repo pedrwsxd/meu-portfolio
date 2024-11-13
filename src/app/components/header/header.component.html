@@ -1,0 +1,86 @@
+<section id="header">
+    <header>
+        <div class="header">
+
+            <div class="btn-computer">
+                <div class="container-header">
+                    <div class="logo-header">
+                        <img src="assets\svg\logo.svg" alt="Logo" width="110" height="90">
+                    </div>
+
+                    <div class="nav-computer">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Início</a>
+                                </li>
+
+                                <li>
+                                    <a> Projetos </a>
+                                </li>
+
+                                <li>
+                                    <a>Skills</a>
+                                </li>
+                                
+                                <li>
+                                    <a>Contato</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mobile">
+                <div class="logo-header" id="logo-header">
+                    <img src="assets/svg/logo.svg" alt="Logo" width="120" height="100">
+                </div>
+
+                <div (click)="toggleMobileMenu()" class="btn-abrir toggle" id="abrir-menu">
+                    <img src="assets/button/menu.svg" alt="Botão de abrir o menu" height="70" width="70">
+                </div>
+            </div>
+
+            <div [ngClass]="isMenuOpen ? 'menu-on' : 'menu-off'" class="btn-mobile" id="fechar-menu">
+                <div (click)="toggleMobileMenu()" class="btn-fechar botão-fechar">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-x-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                    </svg>
+
+                </div>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="botão-fechar" routerLink="/" routerLinkActive="active"
+                                ariaCurrentWhenActive="page"> Início</a>
+                        </li>
+
+                        <li>
+                            <a class="botão-fechar" routerLinkActive="active"
+                                ariaCurrentWhenActive="page">Projetos</a>
+                        </li>
+
+                        <li>
+                            <a class="botão-fechar" href="">Skills</a>
+                        </li>
+
+                        <li>
+                            <a class="botão-fechar" routerLink="/contato" routerLinkActive="active"
+                                ariaCurrentWhenActive="page">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="overflow-fechar"></div>
+            </div>
+
+
+        </div>
+    </header>
+</section>
