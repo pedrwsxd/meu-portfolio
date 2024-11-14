@@ -1,0 +1,34 @@
+.container-sobre {
+    max-width: 1180px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center; 
+  }
+  
+  .texto-home{
+    width: 632px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .texto-home p{
+    color: var(--secondary-color);
+    font-size: 1.125rem;
+    font-family: "Barlow", sans-serif;
+  }
+
+  .titulo{
+    text-align: center;
+    margin: 90px 0 10px 0;
+  }
+@media (max-width: 768px) {
+    .texto-home{
+      width: 100%;
+      height: 100%;
+    }
+  }

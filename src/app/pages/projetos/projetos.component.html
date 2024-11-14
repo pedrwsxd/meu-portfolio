@@ -1,5 +1,25 @@
 <div class="container-projetos">
+  <div class="texto-home">
+    <h2> <span class="texto-azul">
+      Projetos
+    </span> 
+  </h2>
+  </div>
 
+  <div class="carrossel">
+    <div class="carrossel-inner">
+      <div class="card-projeto">
+        <img src="assets/card/foodtruck.png" alt="Imagem do Projeto">
+        <div class="card-conteudo">
+          <h3>FoodTruck</h3>
+          <p>O projeto é uma plataforma para pedidos de food truck, onde clientes podem visualizar o cardápio, fazer
+            pedidos online e acompanhar o status em tempo real.</p>
+          <a  href="https://www.foodtruck.pedrohenrick.com.br/" target="_blank" class="btn-ver-projeto">Ver Projeto</a>
+        </div>
+      </div>
 
-    
+    </div>
+    <button class="carrossel-control prev" *ngIf="shouldShowControls()" (click)="moveCarrossel(-1)">&#10094;</button>
+    <button class="carrossel-control next" *ngIf="shouldShowControls()" (click)="moveCarrossel(1)">&#10095;</button>
+  </div>
 </div>

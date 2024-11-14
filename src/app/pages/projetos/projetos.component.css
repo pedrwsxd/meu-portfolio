@@ -3,7 +3,108 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap; /* Permitir que os itens quebrem linha */
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; /* Centralizar os itens */
+  }
+  
+  
+  .card-projeto {
+    background-color: #27292e;
+    font-family: "Inter";
+    color: var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px 0;
+    max-width: calc(33.333% - 20px); /* Garantir que os cards não excedam um terço da largura do container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 calc(33.333% - 20px); /* Ajustar a largura dos cards para serem responsivos */
+    margin: 10px;
+  }
+  
+  .card-projeto img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-conteudo {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card-conteudo h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+  }
+  
+  .card-conteudo p {
+    margin: 0 0 20px;
+    font-family: "Barlow";
+    font-size: 1rem;
+    color: #d6d6d6;
+  }
+  
+  .btn-ver-projeto {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-ver-projeto:hover {
+    background-color: #0056b3;
+  }
+
+.carrossel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carrossel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carrossel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carrossel-control.prev {
+  left: 10px;
+}
+
+.carrossel-control.next {
+  right: 10px;
+}
+
+.carrossel-control.hidden {
+  display: none; /* Esconder controles se não houver cards suficientes */
+}
+
+@media (max-width: 768px) {
+    .card-projeto {
+        flex: 1 1 calc(50% - 20px); /* Ajustar a largura dos cards para telas menores */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card-projeto {
+        flex: 1 1 100%; /* Ajustar a largura dos cards para telas muito pequenas */
+        max-width: 100%;
+    }
 }
