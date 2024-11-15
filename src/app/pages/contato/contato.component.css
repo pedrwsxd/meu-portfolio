@@ -1,0 +1,65 @@
+.container-contato {
+    max-width: 1180px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease-out;
+}
+
+.titulo {
+    margin: 30px 0 20px 0;
+}
+
+.list-icon-contato ul li h3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--third-color);
+
+}
+
+.list-icon-contato ul {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    gap: 10px;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.list-icon-contato ul li {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #27292e;
+    border-radius: 8px;
+    -webkit-box-shadow: 10px 10px 72px 0px rgba(0, 191, 255, 0.54);
+    -moz-box-shadow: 10px 10px 72px 0px rgba(0, 191, 255, 0.54);
+    box-shadow: 10px 10px 72px 0px rgba(0, 191, 255, 0.54);
+}
+
+.list-icon-contato ul li p {
+    color: var(--secondary-color);
+    font-family: "Barlow", sans-serif;
+    font-size: 0.6rem;
+    text-align: center;
+}

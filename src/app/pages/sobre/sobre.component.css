@@ -18,8 +18,11 @@
 
   .texto-home p{
     color: var(--secondary-color);
+    line-height: 40px;
+    font-weight: 400;
     font-size: 1.125rem;
     font-family: "Barlow", sans-serif;
+    font-weight: 400;
   }
 
   .titulo{
@@ -28,7 +31,11 @@
   }
 @media (max-width: 768px) {
     .texto-home{
-      width: 100%;
+      width: 70%;
       height: 100%;
+    }
+
+    .sobre-img{
+      display: none;
     }
   }

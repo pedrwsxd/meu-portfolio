@@ -1,0 +1,20 @@
+.container-footer {
+    width: 100%;
+    margin: 150px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 0px 35px 55px 1px rgba(0, 191, 255, 1);
+    -moz-box-shadow: 0px 35px 55px 1px rgba(0, 191, 255, 1);
+    box-shadow: 0px 35px 55px 1px rgba(0, 191, 255, 1);
+    color: var(--third-color);
+
+}
+
+.container-footer img {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}

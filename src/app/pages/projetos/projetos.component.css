@@ -3,25 +3,25 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap; /* Permitir que os itens quebrem linha */
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center; /* Centralizar os itens */
+    justify-content: center; 
   }
   
   
   .card-projeto {
     background-color: #27292e;
-    font-family: "Inter";
+    font-family: "Barlow", sans-serif;
     color: var(--primary-color);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     margin: 20px 0;
-    max-width: calc(33.333% - 20px); /* Garantir que os cards não excedam um terço da largura do container */
+    max-width: calc(33.333% - 20px); 
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1 1 calc(33.333% - 20px); /* Ajustar a largura dos cards para serem responsivos */
+    flex: 1 1 calc(33.333% - 20px); 
     margin: 10px;
   }
   
@@ -92,19 +92,20 @@
 }
 
 .carrossel-control.hidden {
-  display: none; /* Esconder controles se não houver cards suficientes */
+  display: none; 
 }
 
 @media (max-width: 768px) {
     .card-projeto {
-        flex: 1 1 calc(50% - 20px); /* Ajustar a largura dos cards para telas menores */
+        flex: 1 1 calc(50% - 20px); 
         max-width: calc(50% - 20px);
     }
 }
 
 @media (max-width: 480px) {
     .card-projeto {
-        flex: 1 1 100%; /* Ajustar a largura dos cards para telas muito pequenas */
-        max-width: 100%;
+        margin: auto;
+        flex: 1 1 60%; 
+        max-width: 80%;
     }
 }

@@ -5,26 +5,26 @@
             <div class="btn-computer">
                 <div class="container-header">
                     <div class="logo-header">
-                        <img src="assets\svg\logo.svg" alt="Logo" width="110" height="90">
+                        <img src="assets\svg\logo.svg" alt="Logo" width="70" height="70">
                     </div>
 
                     <div class="nav-computer">
                         <nav>
                             <ul>
                                 <li>
-                                    <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Início</a>
+                                    <a href="#home" class="botão-fechar">Início</a>
                                 </li>
 
                                 <li>
-                                    <a> Projetos </a>
+                                    <a href="#projetos" class="botão-fechar">Projetos</a>
                                 </li>
 
                                 <li>
-                                    <a>Skills</a>
+                                    <a href="#skills" class="botão-fechar">Skills</a>
                                 </li>
                                 
                                 <li>
-                                    <a>Contato</a>
+                                    <a href="#contato" class="botão-fechar">Contato</a>
                                 </li>
                             </ul>
                         </nav>
@@ -39,7 +39,7 @@
                 </div>
 
                 <div (click)="toggleMobileMenu()" class="btn-abrir toggle" id="abrir-menu">
-                    <img src="assets/button/menu.svg" alt="Botão de abrir o menu" height="70" width="70">
+                    <img src="assets/button/menu.svg" alt="Botão de abrir o menu" height="50" width="50">
                 </div>
             </div>
 
@@ -58,22 +58,19 @@
                 <nav>
                     <ul>
                         <li>
-                            <a class="botão-fechar" routerLink="/" routerLinkActive="active"
-                                ariaCurrentWhenActive="page"> Início</a>
+                            <a href="#home" class="botão-fechar" (click)="closeMenu()">Início</a>
                         </li>
 
                         <li>
-                            <a class="botão-fechar" routerLinkActive="active"
-                                ariaCurrentWhenActive="page">Projetos</a>
+                            <a href="#projetos" class="botão-fechar" (click)="closeMenu()">Projetos</a>
                         </li>
 
                         <li>
-                            <a class="botão-fechar" href="">Skills</a>
+                            <a href="#skills" class="botão-fechar" (click)="closeMenu()">Skills</a>
                         </li>
 
                         <li>
-                            <a class="botão-fechar" routerLink="/contato" routerLinkActive="active"
-                                ariaCurrentWhenActive="page">Contato</a>
+                            <a href="#contato" class="botão-fechar" (click)="closeMenu()">Contato</a>
                         </li>
                     </ul>
                 </nav>

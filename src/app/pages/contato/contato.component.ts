@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './contato.component.css'
 })
 export class ContatoComponent {
-
+  email: string = 'Pedrwsxd@gmail.com';
+  instagram: string = '@Pedro_Barroco_';
 }
