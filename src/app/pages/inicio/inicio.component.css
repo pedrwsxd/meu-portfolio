@@ -1,0 +1,16 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+#home{
+    margin-top: 200px;
+}
+
+@media (max-width: 768px) {
+
+    .main{
+        gap: 100px;
+    }
+  }
